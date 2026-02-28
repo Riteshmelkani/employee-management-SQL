@@ -26,7 +26,7 @@ This application allows users to perform CRUD operations (Create, Read, Update, 
 ------------------------------------------------------------
 
 ## 📂 Project Structure
-
+```
 employee-management-SQL/
 │
 ├── main.py              # Main application logic
@@ -35,7 +35,7 @@ employee-management-SQL/
 ├── requirements.txt     # Required dependencies
 ├── screenshots/         # Project screenshots (optional)
 └── README.md
-
+```
 ------------------------------------------------------------
 
 ## ⚙ Installation & Setup
