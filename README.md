@@ -1,50 +1,97 @@
+# Employee Management System (Python + MySQL)
 
-# Employee Management System in Python (Tkinter Frontend & MySQL Backend)
+A console-based Employee Management System developed using Python and MySQL.  
+This application allows users to perform CRUD operations (Create, Read, Update, Delete) on employee records stored in a MySQL database.
 
-**Frontend**: Tkinter based frontend.
+------------------------------------------------------------
 
-**MySQL Integration**: Integrated MySQL as the database backend.
+## 🚀 Features
 
-## Features
+- Add new employee records
+- View all employees
+- Update employee details
+- Delete employee records
+- MySQL database connectivity using mysql-connector
+- Config-based database setup using JSON file
 
-- **Add an Employee:** Easily add new employees to your database with this function. Input their details, and the system will store them in the database.
+------------------------------------------------------------
 
-- **Delete an Employee:** Select the employee to delete, and with a click of a button, it will remove the employee details from the database.
+## 🛠 Tech Stack
 
-- **Update an Employee:** Make changes to their information/details and save the updated data.
+- Python 3
+- MySQL
+- mysql-connector-python
+- JSON
 
-- **View All Employees**: Fetch all employees from the database in a single click.
+------------------------------------------------------------
 
-## Screenshots
+## 📂 Project Structure
 
-![App Screenshot](https://github.com/OnkarSagare27/employee-management-mysql/blob/master/screenshots/home_screeen.png)
-![App Screenshot](https://github.com/OnkarSagare27/employee-management-mysql/blob/master/screenshots/add_an_employee.png)
-![App Screenshot](https://github.com/OnkarSagare27/employee-management-mysql/blob/master/screenshots/delete_an_employee.png)
-![App Screenshot](https://github.com/OnkarSagare27/employee-management-mysql/blob/master/screenshots/delete_an_employee_2.png)
-![App Screenshot](https://github.com/OnkarSagare27/employee-management-mysql/blob/master/screenshots/update_an_employee.png)
-![App Screenshot](https://github.com/OnkarSagare27/employee-management-mysql/blob/master/screenshots/update_an_employee_2.png)
-![App Screenshot](https://github.com/OnkarSagare27/employee-management-mysql/blob/master/screenshots/view_all_employee.png)
+employee-management-SQL/
+│
+├── main.py              # Main application logic
+├── sqlClient.py         # Database connection and query handling
+├── config.json          # Database configuration file
+├── requirements.txt     # Required dependencies
+├── screenshots/         # Project screenshots (optional)
+└── README.md
 
-## Setup
-- Fork this repo
-- Clone repo
-```sh
-git clone https://github.com/OnkarSagare27/employee-management-mysql.git
-```
-- Configure stuff in ``config.json``
-```json
-{
-    "pass": "DATABASE PASSWORD",
-    "user": "root",
-    "host": "localhost",
-    "database": "employees"
-}
-```
-- Install requirements
-```sh
-pip install -r requirements.txt
-```
-- Run ``main.py``
-```sh
-python main.py
-```
+------------------------------------------------------------
+
+## ⚙ Installation & Setup
+
+1. Clone the repository:
+   git clone https://github.com/Riteshmelkani/employee-management-SQL.git
+
+2. Navigate into the project folder:
+   cd employee-management-SQL
+
+3. Install required dependencies:
+   pip install -r requirements.txt
+
+4. Create MySQL database:
+   CREATE DATABASE employees_db;
+
+5. Update config.json file with your MySQL credentials:
+   {
+     "host": "localhost",
+     "user": "your_username",
+     "pass": "your_password",
+     "database": "employees_db"
+   }
+
+6. Run the application:
+   python main.py
+
+------------------------------------------------------------
+
+## 🗄 Example Database Table
+
+CREATE TABLE employeedetails (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100),
+    department VARCHAR(100),
+    salary FLOAT,
+    joiningDate DATE
+);
+
+------------------------------------------------------------
+
+## 📌 Learning Outcomes
+
+- Database connectivity in Python
+- MySQL authentication handling
+- Implementing CRUD operations
+- Error handling in SQL queries
+- Git & GitHub version control workflow
+
+------------------------------------------------------------
+
+## 👨‍💻 Author
+
+Ritesh Melkani  
+GitHub: https://github.com/Riteshmelkani
+
+------------------------------------------------------------
+
+If you found this project useful, feel free to star the repository.
